@@ -1,2 +1,19 @@
+<nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container">
+    <a class="navbar-brand text-light" href="#">BrandName</a>
+    
+    <div class="justify-content-end" id="navbarContent">
+      <div class="d-flex gap-3">
+        <button class="btn btn-outline-light" (click)="renderLogin()">Login</button>
+        <button class="btn btn-light" (click)="renderSignup()">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+@if(toggle){
 <app-login-form></app-login-form>
+}
+@else{
 <app-signup-form></app-signup-form>
+}

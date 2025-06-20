@@ -11,4 +11,13 @@ import { SignupForm } from './signup-form/signup-form';
 })
 export class App {
   protected title = 'LoginSignupForms';
+  toggle:boolean=true;
+
+  renderLogin(){
+    this.toggle=true;
+  }
+
+  renderSignup(){
+    this.toggle=false;
+  }
 }
